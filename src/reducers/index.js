@@ -1,12 +1,10 @@
 import { combineReducers } from 'redux';
-import { movieHandling } from '../browse-movies/reducers';
-import { searchMovieHandling } from '../search-movies/reducers';
-import { detailHandling } from '../movie-detail/reducers';
+import { petHandling } from '../pets/reducers/view-reducers';
+import { petCreation } from '../pets/reducers/create-reducers';
 
 const rootReducer = combineReducers({
-  movieHandling,
-  searchMovieHandling,
-  detailHandling
+  petHandling,
+  petCreation
 });
 
 export default rootReducer;
