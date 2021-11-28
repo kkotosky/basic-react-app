@@ -7,6 +7,7 @@ import {
 import './App.scss';
 import Header from './header/header.component';
 import MovieDetail from './movie-detail/movie-detail.component';
+import SearchMovies from './search-movies/search-movies.component';
 import { ReactElement } from 'react';
 
 const App = (): ReactElement => {
@@ -20,6 +21,7 @@ const App = (): ReactElement => {
               <Routes>
                 <Route path="/" element={<Navigate to="/movie/the-dark-knight-2008" />}/>
                 <Route path="/movie/:slug" element={<MovieDetail/>} />
+                <Route path="/search" element={<SearchMovies/>} />
                 <Route path="*" element={<Navigate to="/move/the-dark-knight-2008" />} />
               </Routes>
             </main>
