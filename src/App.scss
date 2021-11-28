@@ -54,16 +54,23 @@ body {
   width: 25px !important;
 }
 
-.pet-app__page-wrapper {
+.wookie-app__page-wrapper {
   display: flex;
   justify-content: space-around;
 }
 
-.pet-app__page-spacer {
+.wookie-app__page-spacer {
   flex-basis: 90%;
+  max-width: 90%;
 }
 
 
 .alert__failure-background {
   background-color: #FFCCCB !important;
+}
+
+.message-display-state {
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
 }

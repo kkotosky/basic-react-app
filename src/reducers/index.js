@@ -1,10 +1,8 @@
 import { combineReducers } from 'redux';
-import { petHandling } from '../pets/reducers/view-reducers';
-import { petCreation } from '../pets/reducers/create-reducers';
+import { detailHandling } from '../movie-detail/reducers';
 
 const rootReducer = combineReducers({
-  petHandling,
-  petCreation
+  detailHandling
 });
 
 export default rootReducer;

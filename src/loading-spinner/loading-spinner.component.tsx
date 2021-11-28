@@ -1,9 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+
 import CircularProgress from '@mui/material/CircularProgress';
+import { ReactElement } from 'react';
 import './loading-spinner.component.scss';
 
-const LoadingSpinner = ({ loading, failed, loadingMessage, failedMessage }) => (
+const LoadingSpinner = ({ loading, failed, loadingMessage, failedMessage }: {
+  loading: boolean;
+  failed: boolean;
+  loadingMessage: string;
+  failedMessage: string;
+}): ReactElement => (
   <div>
     {
       loading && 
@@ -29,12 +34,4 @@ const LoadingSpinner = ({ loading, failed, loadingMessage, failedMessage }) => (
     }
   </div>
 );
-
-LoadingSpinner.propTypes = {
-  loading: PropTypes.bool.isRequired,
-  failed: PropTypes.bool.isRequired,
-  loadingMessage: PropTypes.string,
-  failedMessage: PropTypes.string,
-}
-
 export default LoadingSpinner
