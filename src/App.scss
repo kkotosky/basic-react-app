@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: #E8E9EA;
+}
+
+.util-m-b-8 { margin-bottom: 8px !important; }
+.util-m-t-8 { margin-top: 8px !important; }
+.util-m-r-8 { margin-right: 8px !important; }
+.util-m-l-8 { margin-left: 8px !important; }
+.util-float-right { float: right !important;}
+.util-full-width { width: 100%; }
+.util-background-white { background-color: white; }
+.util-display-block { display: block !important;}
+.circular-progress__in-processing-button {
+  height: 25px !important;
+  width: 25px !important;
+}
+
+.wookie-app__page-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wookie-app__page-spacer {
+  flex-basis: 90%;
+  max-width: 90%;
+}
+
+
+.alert__failure-background {
+  background-color: #FFCCCB !important;
+}
+
+.message-display-state {
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+}
